@@ -1,0 +1,83 @@
+body {
+  width: 100%;
+  height: 100%;
+  margin: auto;
+  background-color: pink;
+}
+
+.menu-icon {
+  position: absolute;
+  z-index: 1;
+  transition: all 1s;
+  transform: translateX(0px);
+}
+
+span {
+  display: block;
+  width: 70px;
+  height: 5px;
+  background-color: black;
+  margin-bottom: 10px;
+  border-radius: 15px;
+  margin-top: 15px;
+  margin-left: 10px;
+}
+
+.open {
+  transition: all 1s;
+  transform: translateX(160px) rotate(40deg);
+}
+.open span:nth-child(3) {
+  transform: rotate(95deg);
+  position: relative;
+  left: 0px;
+  bottom: 20px;
+}
+.open span:nth-child(1) {
+  transform: rotate(95deg);
+  position: relative;
+  left: 0px;
+  bottom: -20px;
+}
+
+nav {
+  background-color: white;
+  transition: 100px;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  width: 250px;
+  height: 500px;
+  position: absolute;
+  transition: all 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  transform: translateX(-300px);
+}
+
+nav.open {
+  transform: translateX(5px);
+  transition: all 1s;
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+}
+
+h1 {
+  padding-top: 100px;
+  padding-left: 20px;
+}
+
+p {
+  padding-left: 20px;
+}
+
+li {
+  list-style: none;
+  padding: 10px;
+  margin: auto;
+  font-size: 20px;
+}
+
+ul {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=menu.css.map */
